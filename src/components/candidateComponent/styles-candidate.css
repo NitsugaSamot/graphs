@@ -1,0 +1,9 @@
+.candidate-card{
+    padding: 2rem;
+    border-style: inset;
+    width: 20rem;
+}
+
+.list-intereses{
+    list-style: none;
+}
