@@ -43,7 +43,7 @@ const ModalCandidate = ({ candidate, onClose }) => {
                <EBARChartIntereses interesesData={Personal.Intereses} />
             </div>
 
-            <EBARChartIntereses interesesData={Personal.Intereses} />
+  
           </div>
 
 

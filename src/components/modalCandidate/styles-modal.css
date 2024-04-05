@@ -16,6 +16,9 @@
     color: #fefefec4;
   }
 
+  .close{
+    color: rgb(111, 12, 12);
+  }
   .personal-info{
     background-color: rgba(141, 10, 86, 0.4);
     /* text-align: center; */
