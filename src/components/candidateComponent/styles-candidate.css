@@ -1,11 +1,11 @@
 .candidate-card{
     padding: 0.4rem;
     border-style: inset;
-    width: 100%;
+    width: 90%;
     display: flex;
-
+    gap: 1rem;
     box-shadow: 0px 0px 15px 3px rgb(0 0 0 / .15);
-
+    justify-content: center;
     margin-bottom: 1rem;
     transition-property: transform;
     transition-duration: 300ms;
@@ -19,6 +19,10 @@
     list-style: none;
 }
 
-.div-info{
+.div-info {
     width: 10rem;
+    /* background-color: rgba(17, 65, 188, 0.92);  */
+    color: rgb(33, 20, 4);
+    text-align: center;
+    border-radius: 3%;
 }

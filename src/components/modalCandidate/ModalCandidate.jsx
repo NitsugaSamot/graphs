@@ -37,7 +37,33 @@ const ModalCandidate = ({ candidate, onClose }) => {
 
             </div>
 
-            <div className="profesional-info">
+            <div className="div-graphic">
+            <h3>Intereses:</h3>
+
+               <EBARChartIntereses interesesData={Personal.Intereses} />
+            </div>
+
+            <EBARChartIntereses interesesData={Personal.Intereses} />
+          </div>
+
+
+          <div className="intereses-info">
+
+            <div className="div-graphic">
+                <h3>Habilidades:</h3>
+                <EPieChart
+                  data={[
+                    { value: Personal.Ingles, name: 'Nivel de Inglés' },
+                    { value: 10 - Personal.Ingles, name: 'Otro' },
+                    { value: Personal.ExpLaboral, name: 'Experiencia Laboral' },
+                    { value: Personal.Rank, name: 'Rank' },
+                    { value: Personal.ExpELaboral, name: 'Experiencia Laboral Total' }
+                  ]} 
+                />
+            </div>
+
+
+        <div className="profesional-info">
               <h3>ExperienciaProfesional</h3>
               <p>Actitud: {Personal.Actitud}</p>
               <p>Experiencia Laboral Total: {Personal.ExpELaboral}</p>
@@ -47,23 +73,6 @@ const ModalCandidate = ({ candidate, onClose }) => {
               <p>Empresa Actual: {Personal.Empresa}</p>
               <p>Responsabilidades Actuales: {Personal.Resp}</p>
             </div>
-          </div>
-
-
-          <div className="intereses-info">
-              <h3>Intereses:</h3>
-
-              <EBARChartIntereses interesesData={Personal.Intereses} />
-
-              <EPieChart
-                data={[
-                  { value: Personal.Ingles, name: 'Nivel de Inglés' },
-                  { value: 10 - Personal.Ingles, name: 'Otro' },
-                  { value: Personal.ExpLaboral, name: 'Experiencia Laboral' },
-                  { value: Personal.Rank, name: 'Rank' },
-                  { value: Personal.ExpELaboral, name: 'Experiencia Laboral Total' }
-                ]}
-              />
 
           </div>
 

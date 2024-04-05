@@ -4,6 +4,8 @@ const Candidate = ({ candidate, onClick }) => {
   const { Personal } = candidate;
 
   return (
+
+    <>
     <div className='candidate-card' onClick={onClick}>
       <div className='div-info'>
         <h4>{`${Personal.Nombre} ${Personal.Apellido}`}</h4>
@@ -43,6 +45,8 @@ const Candidate = ({ candidate, onClick }) => {
      
 
     </div>
+
+    </>
   );
 };
 

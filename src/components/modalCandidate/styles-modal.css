@@ -1,5 +1,5 @@
 .modal-candidate {
-    display: none; /* El modal está oculto por defecto */
+    display: none; 
     position: fixed;
     z-index: 1;
     left: 0;
@@ -10,12 +10,42 @@
     background-color: rgba(0,0,0,0.4);
   }
   
+  .header-modal{
+    background-color: rgba(10, 54, 135, 0.4);
+    padding: 0.4rem;
+    color: #fefefec4;
+  }
+
+  .personal-info{
+    background-color: rgba(141, 10, 86, 0.4);
+    /* text-align: center; */
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+    color: rgb(47, 39, 39);
+  }
+
+  .educacional-info{
+    background-color: rgba(158, 163, 13, 0.4);
+    /* text-align: center; */
+    padding: 0.4rem;
+    margin-top: 0.4rem;
+    color: rgb(47, 39, 39);
+  }
+
+  .profesional-info{
+    text-align: right;
+    background-color: rgba(8, 3, 32, 0.4);
+    padding: 0.4rem;
+    margin-top: 4rem;
+    color: rgb(47, 39, 39);
+  }
+
   .modal-candidate-content {
     background-color: #fefefe;
-    margin: 10% auto; /* Centra verticalmente */
+    margin: 10% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; /* Ancho del modal */
+    width: 80%; 
   }
 
   .grid-modal{

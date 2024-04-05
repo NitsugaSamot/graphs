@@ -8,13 +8,13 @@ body {
 }
 
 .div-candidates{
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .container{
   display: grid;
-  grid-template-columns: 2fr 6fr;
+  grid-template-columns: 3fr 3fr;
 }
 
 .div-candidates{
@@ -29,8 +29,13 @@ body {
   color: whitesmoke;
 }
 
-.div-buttons{
-  display: block;
+.div-options{
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.modals{
+  padding: 2rem;
 }
 
 /* #root {
