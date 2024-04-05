@@ -12,6 +12,27 @@ body {
   flex-wrap: wrap;
 }
 
+.container{
+  display: grid;
+  grid-template-columns: 2fr 6fr;
+}
+
+.div-candidates{
+  width: 80%;
+}
+
+.button-graph{
+  width: 50%;
+  height: 3rem;
+  background-color: rgba(16, 43, 197, 0.5);
+  cursor: pointer;
+  color: whitesmoke;
+}
+
+.div-buttons{
+  display: block;
+}
+
 /* #root {
   max-width: 1280px;
   margin: 0 auto;

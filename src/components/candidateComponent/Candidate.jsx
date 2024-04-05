@@ -1,24 +1,36 @@
 import './styles-candidate.css'
 
-const Candidate = ({ candidate }) => {
+const Candidate = ({ candidate, onClick }) => {
   const { Personal } = candidate;
 
   return (
-    <div className='candidate-card'>
-      <h2>{`${Personal.Nombre} ${Personal.Apellido}`}</h2>
-      <p>Rank: {Personal.Rank}</p>
-      <p>Edad: {Personal.Edad}</p>
-      <p>Experiencia E. Laboral: {Personal.ExpELaboral}</p>
-      <p>Trabajando?: {Personal.Trabajando}</p>
-      <p>Experiencia Laboral: {Personal.ExpELaboral}</p>
+    <div className='candidate-card' onClick={onClick}>
+      <div className='div-info'>
+        <h4>{`${Personal.Nombre} ${Personal.Apellido}`}</h4>
+      </div>
+      <div className='div-info'>
+          <p>{Personal.Técnico}</p>
+      </div>
+      <div className='div-info'>
+        <p>Rank: {Personal.Rank}</p>
+      </div>
 
-      <p>Educación: {Personal.Educación}</p>
+      
+
+
+      {/* <p>Edad: {Personal.Edad}</p> */}
+      {/* <p>Experiencia E. Laboral: {Personal.ExpELaboral}</p> */}
+      {/* <p>Trabajando?: {Personal.Trabajando}</p>
+      <p>Experiencia Laboral: {Personal.ExpELaboral}</p> */}
+
+
+      {/* <p>Educación: {Personal.Educación}</p>
       <p>Grado: {Personal.Grado}</p>
       <p>Instituto: {Personal.Instituto}</p>
       <p>Ingles: {Personal.Ingles}</p>
       <p>Técnico: {Personal.Técnico}</p>
-      <p>Actitud: {Personal.Actitud}</p>
-      <div>
+      <p>Actitud: {Personal.Actitud}</p> */}
+      {/* <div>
         {Object.keys(Personal.Intereses).map((interes, i) => (
           <li className='list-intereses' key={i}>
             <div>
@@ -27,7 +39,7 @@ const Candidate = ({ candidate }) => {
             
           </li>
         ))}
-      </div>
+      </div> */}
      
 
     </div>
