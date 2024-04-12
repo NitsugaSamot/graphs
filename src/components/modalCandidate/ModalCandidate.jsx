@@ -87,23 +87,3 @@ const ModalCandidate = ({ candidate, onClose }) => {
 
 export default ModalCandidate;
 
-
-// import React from 'react';
-// import './styles-modal.css'
-
-// const ModalCandidate = ({ candidate, onClose }) => {
-//   return (
-//     <div className="modal-candidate" style={{ display: 'block' }}>
-//       <div className="modal-candidate-content">
-//         <span className="close" onClick={onClose}>&times;</span>
-//         <h2>{candidate.Personal.Nombre} {candidate.Personal.Apellido}</h2>
-//         <p>Edad: {candidate.Personal.Edad}</p>
-//         <p>Estado Civil: {candidate.Personal["Estado Civil"]}</p>
-//         <p>Sector: {candidate.Personal.Sector}</p>
-//         {/* Agrega aquí el resto de la información del candidato */}
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default ModalCandidate;
